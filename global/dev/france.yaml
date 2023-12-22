@@ -1,0 +1,40 @@
+version: 1.0.0
+location: westeurope
+tenant_id: c5f6f6e0-4c59-4aa1-bcd7-033f5f211b1c
+subscription_id: 621d764f-f7c5-4a08-a687-4b8522a741f6
+wan: dev
+hub: westeurope
+address_space:
+  - 172.16.20.0/23
+  - fd00:4d45:4741:400::/60
+subnets:
+  - name: k8s-system
+    size: S
+  - name: k8s-zone-1
+    size: L
+  - name: k8s-zone-2
+    size: L
+  - name: k8s-zone-3
+    size: L
+cluster:
+  id: 2
+  kubernetes_version: 1.26.6
+  sku_tier: Free
+  pod_cidrs:
+  - 100.64.160.0/19
+  - fd00:4d45:4741:400::/60
+  service_cidrs:
+  - 100.64.192.0/19
+  - fd00:4d45:4741:400::/60
+  default_node_pool:
+    max_count: 10
+    max_pods: 250
+    vm_size: Standard_D2pds_v5
+  node_pools:
+    - name: usr
+      max_count: 50
+      max_pods: 250
+      vm_size: Standard_D2pds_v5
+cilium:
+  version: v1.15.0-pre.2
+  gateway_api_version: v1.0.0

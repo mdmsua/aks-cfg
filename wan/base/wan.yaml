@@ -1,0 +1,13 @@
+kind: Konfiguration
+metadata:
+  name: wan
+configuration:
+  version: 1.0.0
+  location: westeurope
+  cidrs:
+    hubs: 192.168.0.0/16
+    networks:
+    - 172.16.0.0/12
+    - fd20:4d45:4741::/48
+    kubernetes: 100.64.0.0/10
+  hubs: []

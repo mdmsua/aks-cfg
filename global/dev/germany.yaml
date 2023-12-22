@@ -1,0 +1,32 @@
+version: 1.0.0
+location: westeurope
+tenant_id: c5f6f6e0-4c59-4aa1-bcd7-033f5f211b1c
+subscription_id: 621d764f-f7c5-4a08-a687-4b8522a741f6
+wan: dev
+hub: westeurope
+address_space: XS
+subnets:
+  - name: kubernetes
+    size: XL
+cluster:
+  id: 4
+  kubernetes_version: 1.26
+  sku_tier: Free
+  pod_cidrs:
+  - 100.64.0.0/16
+  # - fd00:4d45:4741:0410::/64
+  service_cidrs:
+  - 100.65.0.0/16
+  # - fd00:4d45:4741:4011::/64
+  default_node_pool:
+    max_count: 10
+    max_pods: 250
+    vm_size: Standard_D2pds_v5
+  node_pools:
+    - name: usr
+      max_count: 50
+      max_pods: 250
+      vm_size: Standard_D2pds_v5
+cilium:
+  version: v1.15.0-pre.2
+  gateway_api_version: v1.0.0
