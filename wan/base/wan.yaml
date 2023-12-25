@@ -3,6 +3,7 @@ metadata:
   name: wan
 configuration:
   version: main
+  name: ''
   location: westeurope
   cidrs:
     hubs: 192.168.0.0/16

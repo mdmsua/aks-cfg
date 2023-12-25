@@ -2,6 +2,7 @@ kind: Konfiguration
 metadata:
   name: wan
 configuration:
+  name: eu
   tenant_id: 999bdbac-6929-449d-bd06-495ff2cbcf7e
   subscription_id: 6a0b06eb-d40c-48c5-bcc6-21d38f2d6985
   hubs:
