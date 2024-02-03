@@ -1,5 +1,0 @@
-tenant_id: "c5f6f6e0-4c59-4aa1-bcd7-033f5f211b1c"
-subscription_id: "918ca2ce-8338-4dc8-b1cb-1c17c458ac65"
-storage_account_name: "megaglobal"
-resource_group_name: "mega-global"
-container_name: "tfstate"
