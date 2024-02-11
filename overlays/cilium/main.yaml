@@ -8,5 +8,6 @@ spec:
   location: westeurope
   zones: [1, 2, 3]
   cluster:
+    version: 1.26
     admins:
       - 6b1aa092-b266-49f3-be05-341fff39cd59
