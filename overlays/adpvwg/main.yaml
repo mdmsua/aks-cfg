@@ -1,0 +1,13 @@
+kind: Configuration
+metadata:
+  name: main
+spec:
+  project: byocni
+  tenant_id: c5f6f6e0-4c59-4aa1-bcd7-033f5f211b1c
+  subscription_id: 621d764f-f7c5-4a08-a687-4b8522a741f6
+  location: westeurope
+  zones: [1, 2, 3]
+  cluster:
+    id: 1
+    admins:
+      - 225b05d2-33ca-4c4e-9224-f2aed8b54f88

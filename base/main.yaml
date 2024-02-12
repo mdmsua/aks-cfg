@@ -12,6 +12,7 @@ spec:
       - 192.168.255.0/24
       - fd18:4449:4D49::/48
   cluster:
+    id: 1
     version: 1.28
     default_node_pool:
       vm_size: Standard_D2pds_v5
@@ -35,6 +36,11 @@ spec:
         os_sku: AzureLinux
     pod_cidrs:
       - 172.16.0.0/16
+      - fd18:4D45:4741::/56
     service_cidrs:
       - 172.17.0.0/16
+      - fd81:4D45:4741::/108
     admins: []
+  charts:
+    cilium:
+      version: 1.15.0
