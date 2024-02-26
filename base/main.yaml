@@ -47,7 +47,7 @@ spec:
     cert_manager:
       version: 1.14.3
     external_dns:
-      version: 0.14.0
+      version: 1.14.3
   secrets:
     cloudflare_api_token: ""
     terraform_api_token: ""
