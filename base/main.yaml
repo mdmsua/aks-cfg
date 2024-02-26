@@ -50,3 +50,4 @@ spec:
       version: 0.14.0
   secrets:
     cloudflare_api_token: ""
+    terraform_api_token: ""
