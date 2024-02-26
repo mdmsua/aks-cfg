@@ -26,7 +26,7 @@ spec:
     node_pools:
       - name: main
         mode: User
-        vm_size: Standard_D2pds_v5
+        vm_size: Standard_D8ds_v5
         min_count: 0
         max_count: 3
         max_pods: 250
@@ -43,4 +43,10 @@ spec:
     admins: []
   charts:
     cilium:
-      version: 1.15.0
+      version: 1.15.1
+    cert_manager:
+      version: 1.14.3
+    external_dns:
+      version: 0.14.0
+  secrets:
+    cloudflare_api_token: ""
