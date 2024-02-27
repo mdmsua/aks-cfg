@@ -45,7 +45,7 @@ spec:
     cilium:
       version: 1.15.1
     cert_manager:
-      version: 1.14.3
+      version: v1.14.3
       email: mdmsua@icloud.com
       production: false
     external_dns:
