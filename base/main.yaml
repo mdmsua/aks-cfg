@@ -46,8 +46,12 @@ spec:
       version: 1.15.1
     cert_manager:
       version: 1.14.3
+      email: mdmsua@icloud.com
+      production: false
     external_dns:
       version: 1.14.3
+    cloud_operator:
+      version: 2.2.0
   secrets:
     cloudflare_api_token: ""
     terraform_api_token: ""
