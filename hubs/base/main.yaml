@@ -1,0 +1,8 @@
+kind: HubConfiguration
+metadata:
+  name: main
+  version: 0.0.0
+spec:
+  location: default
+  wan: default
+  address_prefix: 0.0.0.0/0

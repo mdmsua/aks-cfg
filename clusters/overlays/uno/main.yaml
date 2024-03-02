@@ -1,0 +1,17 @@
+kind: ClusterConfiguration
+metadata:
+  name: uno
+  version: main
+spec:
+  area: eu
+  environment: dev
+  id: 1
+  kubernetes_version: 1.28
+  pod_cidrs:
+    - 100.64.0.0/17
+    - fd4d:4547:4104::/54
+  service_cidrs:
+    - 100.64.128.0/17
+    - fd4d:4547:4108::/108
+  admins:
+    - e66a958e-30a1-4ef8-9795-3e855cfd3b61

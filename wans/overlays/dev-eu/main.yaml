@@ -1,0 +1,13 @@
+kind: WanConfiguration
+metadata:
+  name: wan
+spec:
+  version: main
+  environment: dev
+  region: eu
+  location: germanywestcentral
+  locations:
+    - germanywestcentral
+    - francecentral
+    - italynorth
+    - swedencentral

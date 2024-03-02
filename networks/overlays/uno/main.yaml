@@ -1,0 +1,9 @@
+kind: NetworkConfiguration
+metadata:
+  name: uno
+  version: main
+spec:
+  hub: dev-germanywestcentral
+  address_space:
+    - 172.16.0.0/22
+    - fd4d:4547:4100::/56

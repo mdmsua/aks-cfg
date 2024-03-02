@@ -1,0 +1,8 @@
+kind: HubConfiguration
+metadata:
+  name: dev-germanywestcentral
+  version: main
+spec:
+  location: germanywestcentral
+  wan: dev-eu
+  address_prefix: 192.168.0.0/23

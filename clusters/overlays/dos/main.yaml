@@ -1,0 +1,17 @@
+kind: ClusterConfiguration
+metadata:
+  name: dos
+  version: main
+spec:
+  area: eu
+  environment: dev
+  id: 2
+  kubernetes_version: 1.28
+  pod_cidrs:
+    - 100.65.0.0/17
+    - fd4d:4547:4104:0400:/54
+  service_cidrs:
+    - 100.65.128.0/17
+    - fd4d:4547:4108:0:0:0:10::/108
+  admins:
+    - e66a958e-30a1-4ef8-9795-3e855cfd3b61

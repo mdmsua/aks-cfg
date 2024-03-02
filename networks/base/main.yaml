@@ -1,0 +1,9 @@
+kind: NetworkConfiguration
+metadata:
+  name: main
+  version: 0.0.0
+spec:
+  hub: default
+  address_space:
+    - 0.0.0.0/0
+    - ::/0

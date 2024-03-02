@@ -1,0 +1,38 @@
+kind: ClusterConfiguration
+metadata:
+  name: main
+  version: 0.0.0
+spec:
+  area: default
+  environment: default
+  id: 0
+  kubernetes_version: 0.0
+  default_node_pool:
+    vm_size: Standard_D2ds_v5
+    min_count: 1
+    max_count: 3
+    max_pods: 30
+    max_surge: 100%
+    os_disk_size_gb: 32
+    os_disk_type: Ephemeral
+    os_sku: AzureLinux
+  node_pools:
+    - name: main
+      mode: User
+      vm_size: Standard_D2ds_v5
+      min_count: 0
+      max_count: 3
+      max_pods: 30
+      max_surge: 100%
+      os_disk_size_gb: 32
+      os_disk_type: Ephemeral
+      os_sku: AzureLinux
+      node_labels: {}
+      node_taints: []
+  pod_cidrs:
+    - 0.0.0.0/0
+    - ::/0
+  service_cidrs:
+    - 0.0.0.0/0
+    - ::/0
+  admins: []

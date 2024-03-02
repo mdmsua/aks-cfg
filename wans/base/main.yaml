@@ -1,0 +1,10 @@
+apiVersion: cfg/v1
+kind: WanConfiguration
+metadata:
+  name: wan
+spec:
+  environment: default
+  region: default
+  version: 0.0.0
+  location: default
+  locations: []
